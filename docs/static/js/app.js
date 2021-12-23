@@ -1,8 +1,15 @@
+//
+// Homework assignment #14:  javascript-plotly-challenge
+//
+// Submitted by:  Ricardo G. Mora, Jr.  12/23/2021
+//
+
+
 // set location to JSON file
 let jsonFile = "static/js/samples.json"
 
 // function that populates the demographics box
-function demoInfo(sample)
+function buildInfoBox(sample)
 {
     // use d3.json in order to get all of the data
     d3.json(jsonFile).then((data) => {
@@ -143,10 +150,22 @@ function buildGaugeChart(sample)
                 font: {color: "black", size: 16}
             },      
             type: "indicator",
-            mode: "gauge+number",
+            mode: "gauge+number",            
             gauge: {
-                axis: {range: [0, 10]},
-                bar: {color: "steelblue"}
+                axis: {range: [0, 10], tickmode: "linear", tick0: 2, dtick: 2},
+                bar: {color: "steelblue"},
+                steps: [
+                    {range: [0, 1], color: "white"},
+                    {range: [1, 2], color: "whitesmoke"},
+                    {range: [2, 3], color: "white"},
+                    {range: [3, 4], color: "whitesmoke"},
+                    {range: [4, 5], color: "white"},
+                    {range: [5, 6], color: "whitesmoke"},
+                    {range: [6, 7], color: "white"},
+                    {range: [7, 8], color: "whitesmoke"},
+                    {range: [8, 9], color: "white"},
+                    {range: [9, 10], color: "whitesmoke"},
+                ]
             }
         };
 
@@ -181,7 +200,7 @@ function initialize()
         let sample1 = sampleNames[0];
 
         // call the function to build the initial demographics box
-        demoInfo(sample1);
+        buildInfoBox(sample1);
 
         // call the function to build the initial bar chart
         buildBarChart(sample1);
@@ -198,7 +217,7 @@ function initialize()
 function optionChanged(item)
 {
      // call the function to build the demographics box
-    demoInfo(item);
+    buildInfoBox(item);
 
     // call the function to build the bar chart
     buildBarChart(item);
