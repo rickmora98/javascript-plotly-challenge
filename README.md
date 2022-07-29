@@ -1,4 +1,4 @@
-# Belly Button Biodiversity Dashboard (JavaScript / Plotly Demonstration)
+<h1> Belly Button Biodiversity Dashboard <br> (JavaScript / Plotly Demonstration) </h1>
 
 This project utilizes JavaScript and the Plotly library along with HTML and Bootstrap to create an interactive website dashboard to 
 visualize how many microbes inhabit human navels. The data that is used by the program is contained in a JSON file provided courtesy of
