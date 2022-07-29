@@ -115,7 +115,8 @@ function buildBubbleChart(sample)
         let layout = {
             title: "Bacteria Cultures Per Sample",
             hovermode: "closest",
-            xaxis: {title: "OTU ID"}
+            xaxis: {title: "OTU ID (Microbial Species Identification Number"},
+            yaxis: {title: "Amount Present in Culture"}
         };
 
         // call Plotly to plot the bubble chart on the page
