@@ -1,6 +1,18 @@
-# javascript-plotly-challenge 
+# Belly Button Biodiversity Dashboard (JavaScript / Plotly Demonstration)
 
-This repository contains my solutions to Data Analytics Bootcamp Homework Assignment for week #14.
+This project utilizes JavaScript and the Plotly library along with HTML and Bootstrap to create an interactive website dashboard to 
+visualize how many microbes inhabit human navels. The data that is used by the program is contained in a JSON file provided courtesy of
+<a href="http://robdunnlab.com/projects/belly-button-biodiversity"> The Belly Button Biodiversity Project </a>.  The dashboard allows the 
+user to select an individual test subject from a drop-down list which will automatically update the information displayed in their
+browser.  The dashboard displays demographics about the test subject, which microbial species were found in their navels (and the amounts
+present), and how frequently the subject cleans their belly buttons per week.
+
+To run the program, click on the deployed website link below. <br>
+To examine the code files, their locations are indicated in the tree below.
+
+#### Deployed website: <br>
+
+https://rickmora98.github.io/javascript-plotly-challenge/ <br>
 
 #### Folders/Files:
 
@@ -11,16 +23,11 @@ This repository contains my solutions to Data Analytics Bootcamp Homework Assign
 			- *"app.js"* (javascript file to read JSON file and update graphic elements) <br>
 			- *"samples.json"* (JSON datafile used by *"app.js"*)
 	
-#### Deployed website: <br>
-
-https://rickmora98.github.io/javascript-plotly-challenge/ <br>
-
-#### Note: <br>
-
 The deployed website relies on the folders and files and their relative locations within the **"docs"** folder as indicated above. <br>
-Please do not delete, move, rename, or alter any of these folders and/or files. <br>
-Thank you. <br>
+(Please do not delete, move, rename, or alter!)
 
-#### Submitted by: <br>
- Ricardo G. Mora, Jr.  12/23/2021
- 
+#### Dashboard Appearance:
+<img src="/images/DashboardExample.jpg">
+
+#### JavaScript Code For One of the Dashboard Elements:
+<img src="/images/CodeSample.jpg">
