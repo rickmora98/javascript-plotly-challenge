@@ -115,7 +115,7 @@ function buildBubbleChart(sample)
         let layout = {
             title: "Bacteria Cultures Per Sample",
             hovermode: "closest",
-            xaxis: {title: "OTU ID (Microbial Species Identification Number"},
+            xaxis: {title: "OTU ID (Microbial Species Identification Number)"},
             yaxis: {title: "Amount Present in Culture"}
         };
 
