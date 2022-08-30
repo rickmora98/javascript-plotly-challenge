@@ -5,8 +5,8 @@ This project utilizes JavaScript and the Plotly library along with HTML and Boot
 visualize how many microbes inhabit human navels. The data that is used by the program is contained in a JSON file provided courtesy of
 <a href="http://robdunnlab.com/projects/belly-button-biodiversity"> The Belly Button Biodiversity Project </a>.  The dashboard allows the 
 user to select an individual test subject from a drop-down list which will automatically update the information displayed in their
-browser.  The dashboard displays demographics about the test subject, which microbial species were found in their navels (and the amounts
-present), and how frequently the subject cleans their belly buttons per week.
+browser.  The dashboard displays demographics about the test subject, which microbial species were found in their navel (and the amounts
+present), and how frequently the subject cleaned their belly button per week.
 
 To run the program, click on the deployed website link below. <br>
 To examine the code files, their locations are indicated in the tree below.
